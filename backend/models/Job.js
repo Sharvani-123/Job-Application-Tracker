@@ -13,7 +13,7 @@ const jobSchema = new mongoose.Schema({
     },
     role:{
         type:String,
-        required:[true, 'Please add a jpb role'],
+        required:[true, 'Please add a job role'],
         trim: true
     },
     status:{
