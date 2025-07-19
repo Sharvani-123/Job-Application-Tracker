@@ -56,7 +56,7 @@ const Dashboard = () => {
   const fetchJobs = async () => {
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:5000/api/jobs', {
+      const response = await fetch('https://job-application-tracker-1-ywr7.onrender.com/api/jobs', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ const Dashboard = () => {
     e.preventDefault()
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:5000/api/jobs', {
+      const response = await fetch('https://job-application-tracker-1-ywr7.onrender.com/api/jobs', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -118,7 +118,7 @@ const Dashboard = () => {
   const handleUpdateJobStatus = async (jobId, newStatus) => {
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch(`http://localhost:5000/api/jobs/${jobId}`, {
+      const response = await fetch(`https://job-application-tracker-1-ywr7.onrender.com/api/jobs/${jobId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -140,7 +140,7 @@ const Dashboard = () => {
     if (window.confirm('Are you sure you want to delete this job application?')) {
       try {
         const token = localStorage.getItem('token')
-        const response = await fetch(`http://localhost:5000/api/jobs/${jobId}`, {
+        const response = await fetch(`https://job-application-tracker-1-ywr7.onrender.com/api/jobs/${jobId}`, {
           method: 'DELETE',
           headers: {
             'Authorization': `Bearer ${token}`,
