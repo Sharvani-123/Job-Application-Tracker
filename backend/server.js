@@ -13,10 +13,20 @@ connectDB();
 const app = express();
 
 // Middleware
+const corsOptions = {
+  origin: [
+    'http://localhost:3000', // Local development
+    'http://localhost:5173', // Vite dev server
+    'https://job-application-tracker-nu-pearl.vercel.app' // Production frontend
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev')); 
 }
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
