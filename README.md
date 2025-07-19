@@ -2,8 +2,6 @@
 
 A modern, full-stack web application to help job seekers organize and track their job applications with style and efficiency.
 
-![Job Tracker Banner](https://via.placeholder.com/1200x400/793d5b/ffffff?text=Job+Application+Tracker)
-
 ## ✨ Features
 
 - **🔐 Secure Authentication** - JWT-based login and registration
@@ -179,12 +177,6 @@ Job-Application-Tracker/
 - **Security**: Comprehensive authentication and authorization
 - **Scalability**: Modular architecture with separated concerns
 - **Deployment**: Production-ready with cloud hosting
-
-## 📱 Screenshots
-
-| Landing Page | Dashboard | Add Job Form |
-|--------------|-----------|--------------|
-| ![Landing](https://via.placeholder.com/300x200/793d5b/ffffff?text=Landing+Page) | ![Dashboard](https://via.placeholder.com/300x200/793d5b/ffffff?text=Dashboard) | ![Form](https://via.placeholder.com/300x200/793d5b/ffffff?text=Add+Job) |
 
 ## 🤝 Contributing
 
